@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     Get.put(LoginController());
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Contact Listing',
       theme: ThemeData().copyWith(
         scaffoldBackgroundColor: kScaffoldBg,
         appBarTheme: const AppBarTheme(elevation: 1),
