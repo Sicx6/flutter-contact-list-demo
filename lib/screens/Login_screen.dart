@@ -46,7 +46,7 @@ class LoginScreen extends StatelessWidget {
                         'Welcome to IngLab',
                         textAlign: TextAlign.start,
                         style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -62,7 +62,7 @@ class LoginScreen extends StatelessWidget {
                       child: Text(
                         'Please enter your details to continue',
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 17,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey),
                       ),
@@ -73,7 +73,6 @@ class LoginScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Container(
-                    height: 60,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
                       child: TextFormField(
@@ -97,7 +96,7 @@ class LoginScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Obx(
                     () => SizedBox(
-                      height: 60,
+                      // height: 60,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: TextFormField(
@@ -123,6 +122,9 @@ class LoginScreen extends StatelessWidget {
                                     : Icons.visibility_off,
                                 color: Theme.of(context).primaryColorDark,
                               ),
+                            ),
+                            errorStyle: TextStyle(
+                              fontSize: 12, // Adjust the font size as needed
                             ),
                           ),
                         ),
